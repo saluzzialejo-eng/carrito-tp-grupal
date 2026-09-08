@@ -1,1 +1,71 @@
-.gitkeep
+/* ===== Variables ===== */
+
+:root{
+  --celeste: #0E7FB8;
+  --celeste-osc: #0A6288;
+  --color-texto: #000;
+  --color-fondo: #ffffff;
+  --fuente-base: 'Segoe UI', sans-serif;
+}
+
+/* ===== Reset / Base ===== */
+*{
+      margin: 0;padding: 0;
+      box-sizing: border-box;
+      a{
+        text-decoration: none;
+      }
+
+}
+
+/* ===== Header / Nav ===== */
+
+.nav{
+    display: flex; /*para que todos los elemnos se ordenen en horizontal*/
+     justify-content: center; /* Centra los hijos */
+     align-items: center;
+     height: 76px;
+     background-color: var(--celeste) ;
+     padding:0 40px ;
+
+
+
+}
+.nav__logo{
+
+    height: 40px;
+    width: 40px;
+    margin: 5px 20px;
+
+}
+.nav__link{
+    color: var(--color-fondo);
+    font-weight: bold;
+    font-family:  var(--fuente-base);
+    transition: 0.2s;
+    padding: 20px;
+    border-bottom: 2px solid transparent; /*agregar una linea abajo de los links*/
+
+
+}
+.nav__link:hover{
+    border-bottom-color: #ffffff;
+
+}
+
+.nav__link--carrito{
+    background-color: var(--celeste-osc);
+    border-radius: 999px;
+
+}
+.nav__link--carrito:hover{
+    border-bottom-color: transparent;
+    background-color: var(--celeste);
+
+}
+
+
+
+
+/* ===== Footer ===== */
+
