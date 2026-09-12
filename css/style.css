@@ -1,1 +1,151 @@
-.gitkeep
+/* ----- Variables ----- */
+:root {
+  --celeste: #0E7FB8;
+  --celeste-osc: #0A6288;
+  --color-texto: #000;
+  --color-fondo: #ffffff;
+  --fuente-base: 'Segoe UI', sans-serif;
+}
+
+
+/* ----- Reset / Base ----- */
+*{
+
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    body { font-family: var(--fuente-base); color: var(--color-texto); }
+    a { text-decoration: none }
+
+
+}
+
+
+/* ----- Header / Nav ----- */
+.header{
+
+
+}
+.nav{
+    display: flex; /*para que todos los elemnos se ordenen en horizontal*/
+    justify-content: center;/* Centra los hijos */
+    align-items: center; /* centrados verticalmente */
+    height: 76px;
+    padding: 0 40px;       /* 0 arriba/abajo, 40px a los costados */
+    background-color: var(--celeste);
+
+}
+.nav__logo{
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px;;
+    transition: 0.2s;
+
+}
+.nav__logo:hover{
+    transform: scale(1.2);
+}
+
+.nav__link{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent; /*agregar una linea abajo de los links*/
+}
+
+.nav__link:hover{
+    border-bottom-color: #ffffff;
+}
+
+.nav__link--carrito{
+    background-color: var(--celeste-osc);
+    border-radius: 999px;
+    padding: 5px 12px;
+}
+
+.nav__link--carrito:hover{
+    border-bottom-color: transparent; /* anula el subrayado heredado */
+    background-color: var(--celeste); /* se aclara un toque al pasar el mouse, en vez de subrayarse */
+}
+
+
+
+
+
+
+/* ----- Cards de producto ----- */
+
+
+
+
+
+
+
+
+/* ----- Footer ----- */
+
+.footer{
+    background-color: var(--celeste);
+    padding: 40px 60px 0; 
+}
+
+.footer__top{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer__logo{
+    width: 40px;
+    height: 40px;
+}
+
+.footer__descripcion{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer__titulo{
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer__link{
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer__link:hover{
+   color: #ffffff;
+}
+
+.footer__social{
+    display: flex;
+    gap: 12px;
+}
+
+.footer__social-icon{
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+.footer__social-icon:hover{
+    transform: scale(1.2);
+}
+
+.footer__bottom{
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    text-align: center;
+}
+
+.footer__copyright{
+    font-size: 15px;
+}
