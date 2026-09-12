@@ -1,0 +1,100 @@
+/* css-card */
+/* ----- Variables ----- */
+:root {
+  --celeste: #0E7FB8;
+  --celeste-osc: #0A6288;
+  --color-texto: #000;
+  --color-fondo: #ffffff;
+  --fuente-base: 'Segoe UI', sans-serif;
+}
+
+
+/* --------------titulo---------------- */
+
+
+
+
+
+
+
+
+
+/* --------------cartas---------------- */
+
+.catalogo{
+
+    margin: 30px;
+
+}
+.catalogo__titulo{
+
+}
+
+.contenedor{
+
+    margin-top: 55px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 30px;
+
+}
+.card{
+
+    border-top: 2px solid var(--celeste);
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+
+
+.card__foto{
+    
+    width: 100%;
+
+
+} 
+
+
+.card__cuerpo{
+    
+
+
+}
+
+
+
+.card__titulo{
+    font-size: 20px ;
+    color:black;
+    margin-bottom: 10px;
+
+} 
+.card__precio{
+
+    font-size: 20px;
+    color: var(--celeste);
+    font-weight: bolder;
+
+} 
+.card__texto{
+    margin-bottom: 25px;
+
+    
+
+
+}
+.card__boton{
+  border: none;         /* Elimina el borde predeterminado */
+  background: var(--celeste-osc); 
+  padding: 10px;
+  border-radius: 999px;
+  color: inherit;       /* Hereda el color de texto del contenedor */
+  font: inherit;        /* Hereda la tipografía del contenedor */
+  cursor: pointer;      /* Mantiene el puntero de mano al pasar por encima */
+  outline: none;        /* Elimina el borde de enfoque predeterminado (opcional) */
+
+
+}

@@ -1,3 +1,4 @@
+/* style-css */
 /* ----- Variables ----- */
 :root {
   --celeste: #0E7FB8;
@@ -13,11 +14,13 @@
 
     margin: 0;padding: 0;
     box-sizing: border-box;
-    body { font-family: var(--fuente-base); color: var(--color-texto); }
-    a { text-decoration: none }
+    font-family: var(--fuente-base);
+    color: var(--color-texto); 
+    text-decoration: none; 
 
 
 }
+
 
 
 /* ----- Header / Nav ----- */
