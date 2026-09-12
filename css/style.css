@@ -115,6 +115,8 @@
 }
 
 .footer__link{
+    width: fit-content;
+    height: fit-content;
     display: block;
     margin-bottom: 8px;
     color: #000;
