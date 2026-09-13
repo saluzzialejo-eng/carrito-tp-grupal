@@ -11,7 +11,42 @@
 
 /* --------------titulo---------------- */
 
+.hero{
+   background-image: url("/img/golden.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 
+}
+
+.hero__titulo{
+    text-align: center;
+    margin: 40px;
+    font-size: 70px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--celeste);
+
+  
+
+
+}
+
+.hero__texto{
+
+    text-align: center;
+    font-size: 25px;
+    
+
+  
+}
 
 
 
@@ -23,15 +58,25 @@
 
 .catalogo{
 
-    margin: 30px;
+    margin: 30px 100px;
+    margin-bottom: 30px ;
+
+    
 
 }
 .catalogo__titulo{
 
+    margin: 40px;
+    font-size: 40px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--celeste);
+
 }
 
 .contenedor{
-
+    
     margin-top: 55px ;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
@@ -45,7 +90,13 @@
     border-radius: 15px;
     z-index: 1000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
    
+}
+
+.card:hover{
+    scale: calc(1.1);
+
 }
 
 
@@ -89,9 +140,9 @@
 .card__boton{
   border: none;         /* Elimina el borde predeterminado */
   background: var(--celeste-osc); 
-  padding: 10px;
+  padding: 15px;
   border-radius: 999px;
-  color: inherit;       /* Hereda el color de texto del contenedor */
+  color: var(--color-fondo);       /* Hereda el color de texto del contenedor */
   font: inherit;        /* Hereda la tipografía del contenedor */
   cursor: pointer;      /* Mantiene el puntero de mano al pasar por encima */
   outline: none;        /* Elimina el borde de enfoque predeterminado (opcional) */
