@@ -1,0 +1,228 @@
+/* --------------- Portada --------------- */
+
+.portada{
+    background-image: url("../img/golden.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.portada__titulo{
+    font-size: 70px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--celeste);
+    text-align: center;
+}
+
+.portada__texto{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* --------------- Formulario --------------- */
+
+.turnos{
+    margin: 80px 100px;
+}
+
+.formulario{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-top: 3px solid var(--celeste);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.formulario__titulo{
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--celeste);
+}
+
+.formulario__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.campo--ancho{
+    grid-column: 1 / -1;
+}
+
+.campo__label{
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--celeste-osc);
+}
+
+.campo__input{
+    padding: 12px 14px;
+    font: inherit;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo__input:focus{
+    outline: none;
+    border-color: var(--celeste);
+    box-shadow: 0 0 0 3px rgba(14, 127, 184, 0.2);
+}
+
+.campo__opciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.opcion input{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--celeste);
+    cursor: pointer;
+}
+
+
+.formulario__acciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.boton{
+    padding: 15px 30px;
+    font: inherit;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.boton:active{
+    transform: scale(0.97);
+}
+
+.boton--enviar{
+    background-color: var(--celeste-osc);
+    color: var(--color-fondo);
+}
+
+.boton--enviar:hover{
+    background-color: var(--celeste);
+}
+
+.boton--cancelar{
+    background-color: transparent;
+    border: 2px solid var(--celeste-osc);
+    color: var(--celeste-osc);
+}
+
+.boton--cancelar:hover{
+    background-color: rgba(14, 127, 184, 0.1);
+}
+
+
+/* --------------- Listado --------------- */
+
+.listado{
+    margin: 80px 100px;
+}
+
+.listado__titulo{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--celeste);
+}
+
+.listado__vacio{
+    font-size: 18px;
+    color: #666666;
+}
+
+.listado__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.turno{
+    padding: 25px;
+    border-top: 2px solid var(--celeste);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.turno__nombre{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--celeste-osc);
+}
+
+.turno__dato{
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.turno__acciones{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.turno__boton{
+    padding: 8px 18px;
+    font: inherit;
+    font-size: 14px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.turno__boton--editar{
+    background-color: var(--celeste-osc);
+    color: var(--color-fondo);
+}
+
+.turno__boton--editar:hover{
+    background-color: var(--celeste);
+}
+
+.turno__boton--borrar{
+    background-color: #c0392b;
+    color: var(--color-fondo);
+}
+
+.turno__boton--borrar:hover{
+    background-color: #e74c3c;
+}

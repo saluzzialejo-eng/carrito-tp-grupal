@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!----------------tipografias de google---------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+     <!----------------metas---------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!----------------estilos---------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+     <!----------------js---------------------->
     <script src="JS/main.js" defer></script>
-    <title>contacto|PETSHOP</title>
+
+ <!----------------titulo---------------------->
+    <title>contacto | PETSHOP</title>
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <nav class="nav">
             <img class="nav__logo" src="img/logo.png" alt="logo">
             <a class="nav__link" href="index.html">inicio</a>
             <a class="nav__link" href="nosotros.html">nosotros</a>
             <a class="nav__link" href="contacto.html">contacto</a>
-            <a class="nav__link nav__link--carrito" href="carrito.html">carrito(<span id="contador">0</span>)</a>
+            <a class="nav__link nav__link--carrito" href="carrito.html">carrito</a>
         </nav>
     </header>
 
 
-    <main>
-        
+        <main>
+
+        <section class="portada">
+            <h1 class="portada__titulo">Contacto</h1>
+            <p class="portada__texto">Pedí un turno de peluquería, baño o consulta veterinaria.</p>
+        </section>
+
+        <section class="turnos">
+
+            <form class="formulario" novalidate>
+                <h2 class="formulario__titulo">Solicitar turno</h2>
+
+                <div class="formulario__grid">
+
+                    <div class="campo">
+                        <label class="campo__label" for="nombre">Nombre y apellido *</label>
+                        <input class="campo__input" type="text" placeholder="Juan Pérez" >
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="email">Email *</label>
+                        <input class="campo__input" type="email" placeholder="juan@mail.com">
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="telefono">Teléfono *</label>
+                        <input class="campo__input" type="tel" placeholder="3415550198">
+                               
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="fecha">Fecha del turno *</label>
+                        <input class="campo__input" type="date">
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="servicio">Servicio *</label>
+                        <select class="campo__input">
+                            <option value="">Elegí un servicio</option>
+                            <option value="bano">Baño</option>
+                            <option value="peluqueria">Peluquería</option>
+                            <option value="corte-unas">Corte de uñas</option>
+                            <option value="veterinaria">Consulta veterinaria</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo__label" for="horario">Franja horaria *</label>
+                        <select class="campo__input">
+                            <option value="">Elegí una franja</option>
+                            <option value="manana">Mañana (9 a 13)</option>
+                            <option value="tarde">Tarde (16 a 20)</option>
+                        </select>
+                        
+                    </div>
+
+                    <fieldset class="campo campo--ancho">
+                        <legend class="campo__label">Tipo de mascota *</legend>
+                        <div class="campo__opciones">
+                            <label class="opcion">
+                                <input type="radio" name="mascota" value="perro">
+                                <span class="opcion__texto">Perro</span>
+                            </label>
+                            <label class="opcion">
+                                <input type="radio" name="mascota" value="gato">
+                                <span class="opcion__texto">Gato</span>
+                            </label>
+                            <label class="opcion">
+                                <input type="radio" name="mascota" value="otro">
+                                <span class="opcion__texto">Otro</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="formulario__botones">
+                    <button class="boton boton--enviar" type="submit" id="btn-enviar">Guardar turno</button>
+                    <button class="boton boton--secundario" type="reset" id="btn-cancelar">Limpiar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="listado">
+            <h2 class="listado__titulo">Turnos guardados</h2>
+
+            <p class="listado__vacio" id="listado-vacio">Todavía no hay turnos cargados.</p>
+
+            <div class="listado__grid" id="listado-turnos"></div>
+        </section>
+
     </main>
 
 
