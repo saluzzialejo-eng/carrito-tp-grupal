@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!----------------tipografias de google---------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+     <!----------------metas---------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!----------------estilos---------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+     <!----------------js---------------------->
     <script src="JS/main.js" defer></script>
-    <title>carrito|PETSHOP</title>
+
+ <!----------------titulo---------------------->
+    <title>carrito | PETSHOP</title>
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <nav class="nav">
             <img class="nav__logo" src="img/logo.png" alt="logo">
             <a class="nav__link" href="index.html">inicio</a>
             <a class="nav__link" href="nosotros.html">nosotros</a>
             <a class="nav__link" href="contacto.html">contacto</a>
-            <a class="nav__link nav__link--carrito" href="carrito.html">carrito(<span id="contador">0</span>)</a>
+            <a class="nav__link nav__link--carrito" href="carrito.html">carrito</a>
         </nav>
     </header>
 
-    <main>
+
+        <main>
+
+        <section class="portada">
+            <h1 class="portada__titulo">Tu carrito</h1>
+            <p class="portada__texto">Revisá los productos antes de confirmar el pedido.</p>
+        </section>
+
+        <section class="compra">
+
+            <div class="compra__items">
+                <h2 class="compra__titulo">Productos</h2>
+
+                <p class="compra__vacio">
+                    Tu carrito está vacío. <a class="compra__enlace" href="index.html">Ver productos</a>
+                </p>
+
+            </div>
+
+            <div class="resumen">
+                <h2 class="resumen__titulo">Resumen</h2>
+
+                <dl class="resumen__datos">
+                    <dt class="resumen__clave">Productos</dt>
+                    <dd class="resumen__valor resumen__valor-cantidad">0</dd>
+
+                    <dt class="resumen__clave">Subtotal</dt>
+                    <dd class="resumen__valor">$0</dd>
+
+                    <dt class="resumen__clave">Envío</dt>
+                    <dd class="resumen__valor">$0</dd>
+                </dl>
+
+                <p class="resumen__total">
+                    <span class="resumen__total-label">Total</span>
+                    <span class="resumen__total-monto">$0</span>
+                </p>
+
+                <div class="resumen__botones">
+                    <button class="boton boton-confirmar" type="button" >Confirmar pedido</button>
+                    <button class="boton boton-vaciar" type="button">Vaciar carrito</button>
+                </div>
 
 
+            </div>
 
+        </section>
 
-
-
-
-
-        
-        
     </main>
 
-
+    
     <footer class="footer">
     <div class="footer__top">
 
