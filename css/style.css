@@ -1,4 +1,3 @@
-/* style-css */
 /* ----- Variables ----- */
 :root {
   --celeste: #0E7FB8;
@@ -37,6 +36,7 @@
     background-color: var(--celeste);
 
 }
+
 .nav__logo{
     width: 40px;
     height: 40px;
@@ -74,17 +74,6 @@
     border-bottom-color: transparent; /* anula el subrayado heredado */
     background-color: var(--celeste); /* se aclara un toque al pasar el mouse, en vez de subrayarse */
 }
-
-
-
-
-
-
-/* ----- Cards de producto ----- */
-
-
-
-
 
 
 
