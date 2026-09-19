@@ -1,0 +1,76 @@
+/* ----- Variables ----- */
+:root {
+  --celeste: #0E7FB8;
+  --celeste-osc: #0A6288;
+  --color-texto: #000;
+  --color-fondo: #ffffff;
+  --fuente-base: 'Segoe UI', sans-serif;
+}
+
+/* --------------- Portada --------------- */
+
+.nosotros{
+    background-image: url("../img/golden.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.nosotros__titulo{
+    font-size: 70px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--celeste);
+    text-align: center;
+}
+
+.nosotros__texto{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* --------------- Historia --------------- */
+
+.historia{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.historia__texto{
+    text-align: center;
+    font-size: 25px;
+}
+
+.historia__titulo{
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--celeste);
+}
+
+.historia__parrafo{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.historia__foto{
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
