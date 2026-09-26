@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="icon" href="img/logo.png" type="image/png">
      <!----------------js---------------------->
+     <script src="JS/hamburguesa.js defer"></script>
     <script src="JS/main.js" defer></script>
 
  <!----------------titulo---------------------->
@@ -22,16 +23,22 @@
 </head>
 <body>
 
-   <header class="header">
-        <nav class="nav">
-            <img class="nav__logo" src="img/logo.png" alt="logo">
-            <a class="nav__link" href="index.html">inicio</a>
-            <a class="nav__link" href="nosotros.html">nosotros</a>
-            <a class="nav__link" href="contacto.html">contacto</a>
-            <a class="nav__link nav__link--carrito" href="carrito.html">carrito</a>
-        </nav>
-    </header>
+    <header class="header">
+    <nav class="nav" id="nav">
+        <img class="nav__logo" src="img/logo.png" alt="logo">
 
+        <button class="nav__hamburguesa" id="nav-hamburguesa" type="button" aria-label="Abrir menú">
+            <span class="nav__barra"></span>
+            <span class="nav__barra"></span>
+            <span class="nav__barra"></span>
+        </button>
+
+        <a class="nav__link" href="index.html">inicio</a>
+        <a class="nav__link" href="nosotros.html">nosotros</a>
+        <a class="nav__link" href="contacto.html">contacto</a>
+        <a class="nav__link nav__link--carrito" href="carrito.html">carrito</a>
+    </nav>
+</header>
     <main>
         <section class="hero">
             <h1 class="hero__titulo">Todo lo que tu<br>compañero necesita</h1>
