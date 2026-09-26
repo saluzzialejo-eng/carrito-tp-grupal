@@ -179,3 +179,90 @@
 .nav__hamburguesa--activo .nav__barra:nth-child(3){
     transform: translateY(-9px) rotate(-45deg);
 }
+
+
+/* tablet */
+
+
+@media (max-width: 1024px){
+
+    .nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .nav__hamburguesa{
+        display: flex;
+    }
+
+    .nav__logo{
+        margin: 5px 0;
+    }
+
+    .nav__link{
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav--abierto .nav__link{
+        display: block;
+    }
+
+    .nav--abierto .nav__link--carrito{
+        width: fit-content;
+        margin: 10px auto;
+        padding: 10px 25px;
+    }
+
+    .footer{
+        padding: 30px 30px 0;
+    }
+
+    .footer__top{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
+
+/* celualr */
+
+@media (max-width: 480px){
+
+    .footer{
+        padding: 25px 20px 0;
+    }
+
+    .footer__top{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer__logo{
+        margin: 0 auto;
+    }
+
+    .footer__descripcion{
+        font-size: 16px;
+    }
+
+    .footer__link{
+        width: 100%;
+    }
+
+    .footer__social{
+        justify-content: center;
+    }
+
+    .footer__copyright{
+        font-size: 13px;
+    }
+}

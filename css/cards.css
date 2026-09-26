@@ -140,3 +140,71 @@
 
 
 }
+
+/* TABLET */
+@media (max-width: 1024px){
+
+    .hero{
+        height: 70vh;
+    }
+
+    .hero__titulo{
+        margin: 20px;
+        font-size: 45px;
+    }
+
+    .hero__texto{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .catalogo{
+        margin: 30px 40px;
+    }
+
+    .catalogo__titulo{
+        margin: 30px 0;
+        font-size: 32px;
+    }
+
+    .contenedor{
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+}
+
+
+/* CELU */
+@media (max-width: 480px){
+
+    .hero{
+        height: 60vh;
+    }
+
+    .hero__titulo{
+        margin: 15px;
+        font-size: 32px;
+    }
+
+    .hero__texto{
+        font-size: 16px;
+    }
+
+    .catalogo{
+        margin: 25px 15px;
+    }
+
+    .catalogo__titulo{
+        font-size: 26px;
+    }
+
+    .contenedor{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card:hover{
+        scale: 1;
+    }
+}

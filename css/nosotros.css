@@ -74,3 +74,69 @@
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+/* tablet */
+
+@media (max-width: 1024px){
+
+    .nosotros{
+        height: 35vh;
+    }
+
+    .nosotros__titulo{
+        font-size: 45px;
+    }
+
+    .nosotros__texto{
+        font-size: 18px;
+    }
+
+    .historia{
+        margin: 50px 40px;
+        gap: 35px;
+    }
+
+    .historia__titulo{
+        font-size: 32px;
+    }
+
+    .historia__foto{
+        height: 350px;
+    }
+}
+
+
+/* celu */
+
+@media (max-width: 480px){
+
+    .nosotros{
+        height: 30vh;
+    }
+
+    .nosotros__titulo{
+        font-size: 32px;
+    }
+
+    .nosotros__texto{
+        font-size: 16px;
+    }
+
+    .historia{
+        margin: 35px 15px;
+        gap: 25px;
+    }
+
+    .historia__titulo{
+        font-size: 26px;
+    }
+
+    .historia__parrafo{
+        font-size: 16px;
+    }
+
+    .historia__foto{
+        height: 220px;
+    }
+}

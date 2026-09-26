@@ -386,3 +386,23 @@
         width: 100%;
     }
 }
+
+
+/* --------------- Animación de entrada del formulario --------------- */
+
+@keyframes entradaFormulario{
+    0%{
+        opacity: 0;
+        background-color: var(--celeste);
+        transform: translateY(40px);
+    }
+    50%{
+        opacity: 1;
+        background-color: rgba(14, 127, 184, 0.25);
+    }
+    100%{
+        opacity: 1;
+        background-color: var(--color-fondo);
+        transform: translateY(0);
+    }
+}

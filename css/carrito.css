@@ -162,3 +162,75 @@
 .boton-vaciar:hover{
     background-color: rgba(14, 127, 184, 0.15);
 }
+
+
+
+/* TABLET */
+
+@media (max-width: 1024px){
+
+    .portada{
+        height: 35vh;
+    }
+
+    .portada__titulo{
+        font-size: 45px;
+    }
+
+    .portada__texto{
+        font-size: 18px;
+    }
+
+    .compra{
+        margin: 50px 40px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .compra__titulo{
+        font-size: 32px;
+    }
+
+    .resumen__titulo{
+        font-size: 28px;
+    }
+}
+
+
+/* CELU */
+
+@media (max-width: 480px){
+
+    .portada{
+        height: 30vh;
+    }
+
+    .portada__titulo{
+        font-size: 32px;
+    }
+
+    .portada__texto{
+        font-size: 16px;
+    }
+
+    .compra{
+        margin: 35px 15px;
+        gap: 25px;
+    }
+
+    .compra__titulo{
+        font-size: 26px;
+    }
+
+    .resumen{
+        padding: 20px;
+    }
+
+    .resumen__titulo{
+        font-size: 24px;
+    }
+
+    .resumen__total-monto{
+        font-size: 22px;
+    }
+}
