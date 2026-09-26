@@ -33,7 +33,6 @@
 .turnos{
     margin: 80px 100px;
 }
-
 .formulario{
     max-width: 900px;
     margin: 0 auto;
@@ -41,6 +40,8 @@
     border-top: 3px solid var(--celeste);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-fondo);
+    animation: entradaFormulario 1.2s ease-out both;
 }
 
 .formulario__titulo{
@@ -110,6 +111,8 @@
 }
 
 
+/* --------------- Botones --------------- */
+
 .formulario__acciones{
     display: flex;
     flex-wrap: wrap;
@@ -150,7 +153,57 @@
 }
 
 
-/* --------------- Listado --------------- */
+/* --------------- Estados de validación --------------- */
+
+.campo__mensaje{
+    min-height: 20px;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.campo--error .campo__input{
+    border-color: #c0392b;
+}
+
+.campo--error .campo__mensaje{
+    color: #c0392b;
+}
+
+.campo--error .campo__mensaje::before{
+    content: "✕ ";
+    font-weight: bold;
+}
+
+.campo--ok .campo__input{
+    border-color: #27ae60;
+}
+
+.campo--ok .campo__mensaje{
+    color: #27ae60;
+}
+
+.campo--ok .campo__mensaje::before{
+    content: "✓ ";
+    font-weight: bold;
+}
+
+.formulario__aviso{
+    min-height: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario__aviso--ok{
+    color: #27ae60;
+}
+
+.formulario__aviso--error{
+    color: #c0392b;
+}
+
+
+/* --------------- Listado de turnos --------------- */
 
 .listado{
     margin: 80px 100px;
@@ -225,4 +278,111 @@
 
 .turno__boton--borrar:hover{
     background-color: #e74c3c;
+}
+
+
+/* tablet */
+
+@media (max-width: 1024px){
+
+    .portada{
+        height: 35vh;
+    }
+
+    .portada__titulo{
+        font-size: 45px;
+    }
+
+    .portada__texto{
+        font-size: 18px;
+    }
+
+    .turnos{
+        margin: 50px 40px;
+    }
+
+    .formulario{
+        padding: 30px;
+    }
+
+    .formulario__titulo{
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+
+    .listado{
+        margin: 50px 40px;
+    }
+
+    .listado__titulo{
+        font-size: 32px;
+    }
+}
+
+
+/* celular */
+
+@media (max-width: 480px){
+
+    .portada{
+        height: 30vh;
+    }
+
+    .portada__titulo{
+        font-size: 32px;
+    }
+
+    .portada__texto{
+        font-size: 16px;
+    }
+
+    .turnos{
+        margin: 35px 15px;
+    }
+
+    .formulario{
+        padding: 20px;
+    }
+
+    .formulario__titulo{
+        font-size: 26px;
+    }
+
+    .formulario__grid{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .campo__opciones{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formulario__acciones{
+        flex-direction: column;
+    }
+
+    .boton{
+        width: 100%;
+    }
+
+    .listado{
+        margin: 35px 15px;
+    }
+
+    .listado__titulo{
+        font-size: 26px;
+    }
+
+    .listado__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .turno__acciones{
+        flex-direction: column;
+    }
+
+    .turno__boton{
+        width: 100%;
+    }
 }
